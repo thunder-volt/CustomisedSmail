@@ -1,0 +1,240 @@
+/* main body */
+.main_body {
+    display: flex;
+    height: 100vh;
+    border-radius: 12px;
+}
+
+body {
+    /* height: 100vh; */
+    overflow-y: hidden;
+}
+
+.emaillist {
+    padding: 0 20px 0 20px;
+    /* border: 0.5px solid black; */
+    border-radius: 12px;
+    width: 100% !important;
+    height: vh;
+    background-color: #ffffff;
+    color: #000000;
+    flex: 1;
+}
+
+.emailList_settings {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 200;
+    /* padding: 8px; */
+}
+
+.emailList_settingsLeft {
+    display: flex;
+    align-items: center;
+
+}
+
+.emailList_settingsRight {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.emailListsettingsLeft_icon .material-icons {
+    display: flex;
+    /* align-items: left; */
+    margin-left: 25px;
+    margin-top: 3px;
+    transform: scale(1.3);
+
+}
+
+.emailListsettingsLeft_icon .material-icons2 {
+    display: flex;
+    /* align-items: left; */
+    margin-left: 25px;
+    margin-top: 3px;
+    transform: scale(1.3);
+
+}
+
+.emailListsettingsRight_icon .material-icons3 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    align-items: center;
+    position: relative;
+    left: 50%;
+}
+
+.emailListsettingsRight_icon .material-icons4 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    left: 50%;
+}
+
+
+.emailList_settingsRight .material-icons {
+    transform: scale(1.3);
+
+}
+
+.mailListsettingsRight_icon .text_in_top_1 {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    padding: 0 8px;
+    margin: 0px;
+}
+
+/* .mailListsettingsRight_icon text{
+    height: 36px;
+    margin: 0 -8px;
+    padding: 0 8px;
+} */
+.mailListsettingsRight_icon .text_in_top_1 p {
+    display: flex;
+    margin-right: 8px;
+}
+
+
+
+.section {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: grey;
+    border-width: 0;
+}
+
+.emailList__sections {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+
+}
+
+.section__selected {
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+
+}
+
+.section_selected .material-icons {
+    color: red;
+}
+
+.section:hover {
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+
+.section h4 {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.emailRow__options {
+    display: flex;
+    align-items: center;
+}
+
+.emailRow__options .material-icons,
+input {
+    margin: 5px;
+}
+
+.emailList_list {
+    overflow: scroll;
+    height: 55%;
+}
+
+.emailRow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid rgb(234, 232, 232);
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+.emailRow:hover {
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+
+.emailRow_message {
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13px;
+}
+
+.emailRow_message h4 {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.emailRow__title {
+    font-size: 13px;
+    flex: 0.3;
+}
+
+.emailRow__time {
+    padding-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.emailRow_description {
+    font-weight: 400;
+    color: grey;
+}
+
+.emailRow__description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-inline: 10px;
+}
+
+.objects {
+    margin-inline: 10px;
+    width: 53%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 202px;
+}
