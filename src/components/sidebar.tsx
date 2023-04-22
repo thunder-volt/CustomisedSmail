@@ -19,7 +19,7 @@ interface labelData {
 const SideBar = ({ open }: { open: boolean }) => {
   const [labels, setLabels] = useState([])
   const labelFetch = async () => {
-    const result = await fetch('http://localhost:8000/labelsget').then(async (res: any) => {
+    const result = await fetch('http://13.231.246.111/labelsget').then(async (res: any) => {
       // console.log(res.json());
       let resp = await res.json();
       return resp;

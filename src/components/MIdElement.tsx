@@ -25,7 +25,7 @@ const MidElement = () => {
   const [gmailsMails, setGmailMails] = useState([]);
   const [threadsLists, setThreadLists] = useState<Array<Array<threadData>>>([]);
   const mails = async () => {
-    const result = await fetch('http://localhost:8000/mailsget').then(async (res: any) => {
+    const result = await fetch('http://13.231.246.111/mailsget').then(async (res: any) => {
       // console.log(res.json());
       let resp = await res.json();
       return resp;
@@ -36,7 +36,7 @@ const MidElement = () => {
     })
   }
   const threadsList = async () => {
-    const result = await fetch('http://localhost:8000/threadslist').then(async (res: any) => {
+    const result = await fetch('http://13.231.246.111/threadslist').then(async (res: any) => {
       console.log(res);
       let resp = await res.json();
       return resp;
